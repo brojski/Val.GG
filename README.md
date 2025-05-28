@@ -8,7 +8,7 @@
 5. Run your browser and type localhost/Val.GG<br/>
 
 Or run the website online. (THIS WEBSITE IS SAFE) [http://acoba-ruadap-valgg.atwebpages.com/webdev_finalproj/]<br/>
-But DO NOT type sensitive information. Use fake names, emails, passwords because I can see them.<br/>
+But DO NOT type sensitive information. Use fake names, emails, passwords because I can see them.<br/><br/>
 If you get this pop-up, click details, and click 'this unsafe site'<br/>
 ![{BE74A104-E110-4BD7-9BDD-B7F9777712FC}](https://github.com/user-attachments/assets/89b97190-70a2-4e6a-8974-159c311873e9)
 
