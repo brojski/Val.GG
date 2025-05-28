@@ -11,7 +11,7 @@
 </ol>
 
 <h2>Run online website</h2>
-<p>Or run the website online. (THIS WEBSITE IS SAFE) [http://acoba-ruadap-valgg.atwebpages.com/webdev_finalproj/]<br/>
+<p>Or <a href="http://acoba-ruadap-valgg.atwebpages.com/webdev_finalproj/">run the website online</a>. (THIS WEBSITE IS SAFE)<br/>
 But <strong>DO NOT</strong> type sensitive information. Use fake names, emails, passwords because I can see them.<br/></p><br/>
 If you get this pop-up, click details, and click 'this unsafe site'
 
