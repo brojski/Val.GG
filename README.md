@@ -14,8 +14,7 @@
 <p>Or run the website online. (THIS WEBSITE IS SAFE) [http://acoba-ruadap-valgg.atwebpages.com/webdev_finalproj/]<br/>
 But <strong>DO NOT</strong> type sensitive information. Use fake names, emails, passwords because I can see them.<br/></p><br/>
 If you get this pop-up, click details, and click 'this unsafe site'<br/>
-![{BE74A104-E110-4BD7-9BDD-B7F9777712FC}](https://github.com/user-attachments/assets/89b97190-70a2-4e6a-8974-159c311873e9)
-
+![{AA941610-43D9-414F-A05E-2BF37BD1E631}](https://github.com/user-attachments/assets/abfa0b76-f3fa-466c-bb97-538ef745b81d)
 
 ![{371674BE-C128-47B6-9B2E-AB4B7809B47A}](https://github.com/user-attachments/assets/07c0d995-90ea-43d0-87aa-167d17035b51)<br/>
 thx for visiting
