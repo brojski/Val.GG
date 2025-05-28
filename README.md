@@ -3,11 +3,11 @@
 
 <h2>Run Locally</h2>
 <ol>
-<li>Move the folder <strong>'Val.GG'</strong> to C:\xampp\htdocs</li>l
-<li>Run XAMPP Control Panel</li>l
-<li>Start Apache</li>l
-<li>Start MySQL</li>l
-<li>Run your browser and type localhost/Val.GG<br/></li>l
+<li>Move the folder <strong>'Val.GG'</strong> to C:\xampp\htdocs</li>
+<li>Run XAMPP Control Panel</li>
+<li>Start Apache</li>
+<li>Start MySQL</li>
+<li>Run your browser and type localhost/Val.GG<br/></li>
 </ol>
 
 <h2>Run online website</h2>
