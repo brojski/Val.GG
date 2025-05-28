@@ -1,7 +1,7 @@
 # Val.GG
 ![{1FFC9777-D98A-449F-87AA-2EF7982FF26E}](https://github.com/user-attachments/assets/b17460e9-7979-407e-8aa5-96828285ca7e)
 
-1. Move the folder <strong>'VAl.gg'</strong> to C:\xampp\htdocs
+1. Move the folder <strong>'Val.gg'</strong> to C:\xampp\htdocs
 2. Run XAMPP Control Panel
 3. Start Apache
 4. Start MySQL
