@@ -1,14 +1,14 @@
 # Val.GG
 ![{1FFC9777-D98A-449F-87AA-2EF7982FF26E}](https://github.com/user-attachments/assets/b17460e9-7979-407e-8aa5-96828285ca7e)
 
-<h4>Run Locally</h4><br/>
+<h2>Run Locally</h2>
 1. Move the folder <strong>'Val.GG'</strong> to C:\xampp\htdocs
 2. Run XAMPP Control Panel
 3. Start Apache
 4. Start MySQL
 5. Run your browser and type localhost/Val.GG<br/>
 
-<h4>Run online website</h4><br/>
+<h2>Run online website</h2>
 Or run the website online. (THIS WEBSITE IS SAFE) [http://acoba-ruadap-valgg.atwebpages.com/webdev_finalproj/]<br/>
 But <strong>DO NOT</strong> type sensitive information. Use fake names, emails, passwords because I can see them.<br/><br/>
 If you get this pop-up, click details, and click 'this unsafe site'<br/>
