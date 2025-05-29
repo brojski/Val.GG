@@ -101,7 +101,7 @@ $activePage = 'arsenal';
                             <a href="#!" data-filter=".sniper">Snipers</a>
                         </li>
                         <li>
-                            <a href="#!" data-filter=".heavy">Heavy</a>
+                            <a href="#!" data-filter=".heavy">Heavies</a>
                         </li>
                         <li>
                             <a href="#!" data-filter=".melee">Melee</a>
