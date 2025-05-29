@@ -9,7 +9,7 @@ if (!isset($base)) $base = '';
                 <nav class="main-nav">
                     <!-- Logo Start -->
                     <a href="<?php echo $base; ?>index.php" class="logo">
-                        <img src="<?php echo $base; ?>assets/images/maps.html-images/logo.png" alt="" style="width: 158px" />
+                        <img src="<?php echo $base; ?>assets/images/logo.png" alt="" style="width: 158px" />
                     </a>
                     <!-- Logo End -->
                     <!-- Menu Start -->
