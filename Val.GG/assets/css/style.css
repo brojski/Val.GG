@@ -810,6 +810,12 @@ Banner Style
   letter-spacing: 0.5px;
 }
 
+@media (max-width: 767px) {
+  .main-banner .caption h6 {
+    margin-top: 20px;
+  }
+}
+
 .main-banner .caption h2 {
   font-size: 48px;
   color: #fff;
