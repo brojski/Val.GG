@@ -121,13 +121,13 @@ $activePage = 'agents';
       <div class="col-md-12 col-lg-2 text-center">
         <div class="video-buttons" style="filter: invert(1)">
           <img
-            src="../assets/images/agent-abilities/clove1.webp"
-            alt="Video 1"
-            onclick="showVideo('video1', 'EQUIP a fragment of immortality essence. FIRE to throw the fragment, which erupts after a short delay and temporarily decays all targets caught inside.')" />
-          <img
             src="../assets/images/agent-abilities/clove2.webp"
+            alt="Video 1"
+            onclick="showVideo('video1', 'INSTANTLY absorb the life force of a fallen enemy that Clove damaged or killed, gaining haste and temporary health.')" />
+          <img
+            src="../assets/images/agent-abilities/clove1.webp"
             alt="Video 2"
-            onclick="showVideo('video2', 'INSTANTLY absorb the life force of a fallen enemy that Clove damaged or killed, gaining haste and temporary health.')" />
+            onclick="showVideo('video2', 'EQUIP a fragment of immortality essence. FIRE to throw the fragment, which erupts after a short delay and temporarily decays all targets caught inside.')" />
           <img
             src="../assets/images/agent-abilities/clove3.webp"
             alt="Video 3"
@@ -223,8 +223,8 @@ $activePage = 'agents';
         video4: "https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/b9e4ee59e2e2a492ec5a76f71c2161faa6f03981.mp4",
       },
       abilityNames: {
-        video1: "Meddle",
-        video2: "Pick-Me-Up",
+        video1: "Pick-Me-Up",
+        video2: "Meddle",
         video3: "Ruse",
         video4: "ULTIMATE: Not Dead Yet",
       }
