@@ -180,28 +180,36 @@ $(function() {
     loadComments();
 
     // Add comment
-    $('#add-comment-form').on('submit', function(e) {
-        e.preventDefault();
-        var formData = $(this).serialize();
+$('#add-comment-form').on('submit', function (e) {
+    e.preventDefault(); // Prevent page refresh
 
-        $.ajax({
-            type: 'POST',
-            url: '../php/submit_comment.php',
-            data: formData + '&submit_comment=1',
-            success: function(response) {
-                if (response.trim() === "success") {
-                    $('#errorcomment').text('');
-                    $('#comment').val('');
-                    loadComments();
-                } else {
-                    $('#errorcomment').text(response);
-                }
-            },
-            error: function(xhr) {
-                $('#errorcomment').text(xhr.responseText || 'Failed to submit comment.');
+    var comment = $('#comment').val();
+    var page_id = $('#page_id').val();
+
+    $.ajax({
+        url: '../php/submit_comment.php',
+        type: 'POST',
+        data: {
+            comment: comment,
+            page_id: page_id,
+            submit_comment: true
+        },
+        success: function (response) {
+            if (response.trim() === "success") {
+                $('#comment').val(''); // Clear textarea
+                // Reload comments
+                $.get('../php/display_comments.php', { page_id: page_id }, function(data) {
+                    $('#comments-list').html(data);
+                });
+            } else {
+                $('#errorcomment').text(response);
             }
-        });
+        },
+        error: function () {
+            $('#errorcomment').text('Error submitting comment.');
+        }
     });
+});
 
     // Edit comment
     $('#comments-list').on('click', '.edit-comment-btn', function() {

@@ -162,22 +162,19 @@ img {
 }
 
 .thumbnail-container {
-    display: flex; /* Arrange thumbnails in a row */
-    gap: -150px; /* Add spacing between thumbnails */
-
+    display: flex;
+    gap: 10px; /* or whatever spacing you want between thumbnails */
+    justify-content: flex-start; /* align thumbnails to the left */
+    align-items: center; /* vertically center if needed */
 }
 
 .thumbnail-container img {
-  max-width: 100%; /* Ensure images are responsive */
-    width: 100px; /* Fixed width for thumbnails */
-    height: 60px; /* Fixed height for thumbnails */
-    min-width: 50px;
-    min-height: none;
-    object-fit: cover; /* Ensures the image maintains its aspect ratio */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow to thumbnails */
-    border-radius: 5px; /* Optional: Add rounded corners */
+    height: 170px;         /* for 16:9, or adjust as needed */
+    object-fit: cover;    /* or 'contain' for letterboxing */
+    aspect-ratio: 16/9;   /* Ensures the ratio is kept */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .thumbnail-container img:hover {
@@ -1008,6 +1005,8 @@ Trending Style
   border-radius: 25px;
   outline: 4px solid #d1d1d1; /* Updated outline color */
   margin-bottom: 20px;
+  width: 240px;
+  height: 320px; /* Set a fixed height */
 }
 
 .trending .item .thumb {
@@ -1094,7 +1093,54 @@ Trending Style
 Most Played Style
 --------------------------------------------- 
 */
+/* Gun stats list customization */
 
+#gun-stats .list-group-item,
+#map-callouts.list-group .list-group-item  {
+  text-align: left;
+    background: transparent;
+    color: #111111;
+    border: none;
+    padding: 8px 24px;
+    font-size: 1rem;
+    margin-bottom: 0px;
+    border-radius: 6px;
+    transition: background 0.2s;
+    letter-spacing: 0.02em;
+}
+
+#gun-stats .list-group-item:last-child {
+    margin-bottom: 0;
+}
+
+#gun-stats .list-group-item b {
+    color: #ff4655;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+#map-callouts.list-group .list-group-item:last-child {
+    margin-bottom: 0;
+}
+
+#map-callouts.list-group .list-group-item b {
+    color: #ff4655;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+#map-callouts {
+    column-count: 3;
+    column-gap: 16px;
+    /* Optional: for better look */
+    padding-left: 0;
+    margin-top: 16px;
+}
+#map-callouts .list-group-item {
+    display: block;
+    width: 100%;
+    break-inside: avoid;
+}
 .most-played {
   /* background-image: url(../images/VALORANT-bg2.jpg); */
   background-color: #0f1923;

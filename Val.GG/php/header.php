@@ -17,7 +17,7 @@ if (!isset($base)) $base = '';
                         <li><a href="<?php echo $base; ?>index.php" class="<?php echo (isset($activePage) && $activePage == 'home') ? 'active' : ''; ?>">Home</a></li>
                         <li><a href="<?php echo $base; ?>agents.php" class="<?php echo (isset($activePage) && $activePage == 'agents') ? 'active' : ''; ?>">Agents</a></li>
                         <li><a href="<?php echo $base; ?>maps.php" class="<?php echo (isset($activePage) && $activePage == 'maps') ? 'active' : ''; ?>">Maps</a></li>
-                        <li><a href="<?php echo $base; ?>arsenal/arsenal.php" class="<?php echo (isset($activePage) && $activePage == 'arsenal') ? 'active' : ''; ?>">Arsenal</a></li>
+                        <li><a href="<?php echo $base; ?>arsenal.php" class="<?php echo (isset($activePage) && $activePage == 'arsenal') ? 'active' : ''; ?>">Arsenal</a></li>
                         <li class="dropdown">
                             <a href="<?php echo $base; ?>edit.php" style="cursor: default;"><?php echo htmlspecialchars($res_Uname ?? 'Sign In'); ?></a>
                             <?php if (isset($_SESSION['valid'])): ?>

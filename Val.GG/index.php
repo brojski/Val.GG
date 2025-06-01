@@ -108,7 +108,7 @@ $activePage = 'home';
         <div class="col-lg-3 col-md-6 col-sm-6 col-6">
           <div class="item">
             <div class="thumb">
-              <a href="maps/ascent.php"><img
+              <a href="maps/mapPage.php?name=ascent"><img
                   src="assets/images/maps.html-images/ascent.webp"
                   alt="" /></a>
             </div>
@@ -120,7 +120,7 @@ $activePage = 'home';
         <div class="col-lg-3 col-md-6 col-sm-6 col-6">
           <div class="item">
             <div class="thumb">
-              <a href="maps/haven.php"><img
+              <a href="maps/mapPage.php?name=haven"><img
                   src="assets/images/maps.html-images/haven.webp"
                   alt="" /></a>
             </div>
@@ -132,7 +132,7 @@ $activePage = 'home';
         <div class="col-lg-3 col-md-6 col-sm-6 col-6">
           <div class="item">
             <div class="thumb">
-              <a href="maps/fracture.php"><img
+              <a href="maps/mapPage.php?name=split"><img
                   src="assets/images/maps.html-images/split.webp" alt="" /></a>
             </div>
             <div class="down-content">
@@ -143,7 +143,7 @@ $activePage = 'home';
         <div class="col-lg-3 col-md-6 col-sm-6 col-6">
           <div class="item">
             <div class="thumb">
-              <a href="maps/icebox.php"><img
+              <a href="maps/mapPage.php?name=icebox"><img
                   src="assets/images/maps.html-images/icebox.webp" alt="" /></a>
             </div>
             <div class="down-content">
@@ -176,96 +176,96 @@ $activePage = 'home';
         <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6">
           <div class="item">
             <div class="thumb">
-              <a href="agents/reyna.php"><img src="assets/images/most-played-char01.webp" alt="" /></a>
+              <a href="agents/agentPage.php?name=reyna"><img src="assets/images/most-played-char01.webp" alt="" /></a>
             </div>
             <div class="down-content">
               <span class="category">Duelist</span>
               <h4>Reyna</h4>
-              <a href="agents/reyna.php">View</a>
+              <a href="agents/agentPage.php?name=reyna">View</a>
             </div>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6">
           <div class="item">
             <div class="thumb">
-              <a href="agents/jett.php"><img src="assets/images/most-played-char02.webp" alt="" /></a>
+              <a href="agents/agentPage.php?name=jett"><img src="assets/images/most-played-char02.webp" alt="" /></a>
             </div>
             <div class="down-content">
               <span class="category">Duelist</span>
               <h4>Jett</h4>
-              <a href="agents/jett.php">View</a>
+              <a href="agents/agentPage.php?name=jett">View</a>
             </div>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6">
           <div class="item">
             <div class="thumb">
-              <a href="agents/clove.php"><img src="assets/images/most-played-char03.webp" alt="" /></a>
+              <a href="agents/agentPage.php?name=clove"><img src="assets/images/most-played-char03.webp" alt="" /></a>
             </div>
             <div class="down-content">
               <span class="category">Controller</span>
               <h4>Clove</h4>
-              <a href="agents/clove.php">View</a>
+              <a href="agents/agentPage.php?name=clove">View</a>
             </div>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6">
           <div class="item">
             <div class="thumb">
-              <a href="agents/sage.php"><img src="assets/images/most-played-char04.webp" alt="" /></a>
+              <a href="agents/agentPage.php?name=sage"><img src="assets/images/most-played-char04.webp" alt="" /></a>
             </div>
             <div class="down-content">
               <span class="category">Sentinel</span>
               <h4>Sage</h4>
-              <a href="agents/sage.php">View</a>
+              <a href="agents/agentPage.php?name=sage">View</a>
             </div>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6">
           <div class="item">
             <div class="thumb">
-              <a href="agents/omen.php"><img src="assets/images/most-played-char05.webp" alt="" /></a>
+              <a href="agents/agentPage.php?name=omen"><img src="assets/images/most-played-char05.webp" alt="" /></a>
             </div>
             <div class="down-content">
               <span class="category">Controller</span>
               <h4>Omen</h4>
-              <a href="agents/omen.php">View</a>
+              <a href="agents/agentPage.php?name=omen">View</a>
             </div>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6">
           <div class="item">
             <div class="thumb">
-              <a href="agents/cypher.php"><img src="assets/images/most-played-char06.webp" alt="" /></a>
+              <a href="agents/agentPage.php?name=cypher"><img src="assets/images/most-played-char06.webp" alt="" /></a>
             </div>
             <div class="down-content">
               <span class="category">Sentinel</span>
               <h4>Cypher</h4>
-              <a href="agents/cypher.php"> View </a>
+              <a href="agents/agentPage.php?name=cypher"> View </a>
             </div>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6">
           <div class="item">
             <div class="thumb">
-              <a href="agents/raze.php"><img src="assets/images/most-played-char07.webp" alt="" /></a>
+              <a href="agents/agentPage.php?name=raze"><img src="assets/images/most-played-char07.webp" alt="" /></a>
             </div>
             <div class="down-content">
               <span class="category">Duelist</span>
               <h4>Raze</h4>
-              <a href="agents/raze.php"> View </a>
+              <a href="agents/agentPage.php?name=raze"> View </a>
             </div>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6">
           <div class="item">
             <div class="thumb">
-              <a href="agents/sova.php"><img src="assets/images/most-played-char08.webp" alt="" /></a>
+              <a href="agents/agentPage.php?name=sova"><img src="assets/images/most-played-char08.webp" alt="" /></a>
             </div>
             <div class="down-content">
               <span class="category">Initiator</span>
               <h4>Sova</h4>
-              <a href="agents/sova.php"> View </a>
+              <a href="agents/agentPage.php?name=sova"> View </a>
             </div>
           </div>
         </div>

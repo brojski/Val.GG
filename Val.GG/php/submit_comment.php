@@ -34,8 +34,20 @@ if (isset($_POST['submit_comment'])) {
             echo "success";
             exit;
         } else {
-            header("Location: " . $_SERVER['HTTP_REFERER']);
+            // --- REDIRECT FIX START ---
+            $current_url = $_SERVER['HTTP_REFERER'];
+            $parsed_url = parse_url($current_url);
+            $base_url = $parsed_url['scheme'] . '://' . $parsed_url['host'] . $parsed_url['path'];
+            $query = isset($parsed_url['query']) ? $parsed_url['query'] : '';
+            if (strpos($query, "name=") === false && !empty($page_id)) {
+                // Add ?name=page_id if missing
+                $base_url .= (strpos($base_url, '?') === false ? '?' : '&') . "name=" . urlencode($page_id);
+            } elseif (!empty($query)) {
+                $base_url .= '?' . $query;
+            }
+            header("Location: " . $base_url);
             exit;
+            // --- REDIRECT FIX END ---
         }
     } else {
         if ($is_ajax) {
