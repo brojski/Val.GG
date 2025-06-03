@@ -17,7 +17,7 @@
     >run the website online</a
   >. (THIS WEBSITE IS SAFE)<br />
   <strong>FOR PLDT USERS: Run the website with <a href="https://www.opera.com/gx">Opera GX </a>or use mobile data that isn't from SMART or PLDT.</strong> <br/>
-  But <strong>DO NOT</strong> type sensitive information. Use fake names,
+  <strong>DO NOT</strong> type sensitive information. Use fake names,
   emails, passwords because I can see them.<br />
 </p>
 <br />
