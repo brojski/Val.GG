@@ -16,7 +16,7 @@
   <a href="http://acoba-ruadap-valgg.atwebpages.com/webdev_finalproj/"
     >run the website online</a
   >. (THIS WEBSITE IS SAFE)<br />
-  <strong>FOR PLDT USERS: Run the website with <a href="https://www.opera.com/gx">Opera GX </a>or use mobile data that isn't from SMART or PLDT.</strong> <br/>
+  FOR PLDT USERS: Run the website with <strong>a href="https://www.opera.com/gx">Opera GX </a></strong>or use mobile data that <strong>isn't from SMART or PLDT.</strong> <br/>
   <strong>DO NOT</strong> type sensitive information. Use fake names,
   emails, passwords because I can see them.<br />
 </p>
