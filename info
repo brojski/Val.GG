@@ -1,0 +1,66 @@
+1. Bootstrap
+   Utilized:
+   You are using Bootstrap for layout and styling.
+   Evidence:
+   The use of classes like container, row, col-lg-6, col-lg-12, dropdown, and nav indicates that you are leveraging Bootstrap's grid system and components.
+   The inclusion of bootstrap.min.css and bootstrap.min.js confirms Bootstrap is being used.
+2. FontAwesome
+   Utilized:
+   You are using FontAwesome for icons.
+   Evidence:
+   The <i class="fa fa-shopping-bag"></i> in your HTML indicates that FontAwesome icons are being used.
+   The inclusion of fontawesome.css confirms this.
+3. jQuery
+   Utilized:
+   You are using jQuery for JavaScript functionality.
+   Evidence:
+   The inclusion of jquery.min.js suggests that jQuery is being used.
+   However, no specific jQuery code is visible in the provided snippets. If you are not using any jQuery-specific functions, this might be unnecessary.
+4. Custom CSS
+   Utilized:
+   You are using your own custom CSS for styling.
+   Evidence:
+   The inclusion of style.css indicates that you have written custom styles for your project.
+5. Owl Carousel
+   Not Utilized:
+   The owl.css file is commented out, and there is no evidence of Owl Carousel classes (e.g., .owl-carousel) in your HTML.
+6. Animate.css
+   Not Utilized:
+   The animate.css file is commented out, and there are no animation-related classes (e.g., animated, fadeIn) in your HTML.
+7. Swiper.js
+   Not Utilized:
+   The Swiper.js stylesheet (swiper-bundle.min.css) is commented out, and there is no evidence of Swiper.js components (e.g., .swiper-container) in your HTML.
+8. PHP
+   Utilized:
+   You are using PHP extensively for server-side logic.
+   Evidence:
+   Session management (session_start()).
+   Database queries using mysqli_query() to fetch and update user data.
+   Conditional rendering of HTML based on session variables (e.g., if (isset($\_SESSION['valid']))).
+9. MySQL
+   Utilized:
+   You are using MySQL as your database.
+   Evidence:
+   Queries like SELECT \* FROM users WHERE id='$id' and UPDATE users SET ... indicate interaction with a MySQL database.
+10. JavaScript
+    Partially Utilized:
+    You are using JavaScript for basic functionality.
+    Evidence:
+    The setTimeout function for delayed redirection.
+    However, there is no evidence of advanced JavaScript frameworks or libraries being used.
+
+Summary of Frameworks and Libraries Utilized
+Bootstrap: Yes
+FontAwesome: Yes
+jQuery: Yes (but minimal usage; consider removing if not needed)
+Custom CSS: Yes
+Owl Carousel: No
+Animate.css: No
+Swiper.js: No
+PHP: Yes
+MySQL: Yes
+JavaScript: Partially
+
+Recommendation
+Remove unused libraries like owl.css, animate.css, and swiper-bundle.min.css if you are not planning to use them.
+If you are not using jQuery-specific functionality, consider removing it to reduce unnecessary dependencies.

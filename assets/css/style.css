@@ -1,0 +1,1755 @@
+/* ---------------------------------------------
+Table of contents
+------------------------------------------------
+01. font & reset css
+02. reset
+03. global styles
+04. header
+05. banner
+06. features
+07. testimonials
+08. contact
+09. footer
+
+--------------------------------------------- */
+/* 
+---------------------------------------------
+font & reset css
+--------------------------------------------- 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+/* 
+---------------------------------------------
+reset
+--------------------------------------------- 
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header, nav, section, article, aside, footer, hgroup {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1e1e1e;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+.agent-name img {
+  filter: invert(100%); /* Invert colors for better visibility */
+  width: 2%; /* Increased width for overall size */
+  height: auto;
+  margin-top: -2px;
+  margin-left: 5px;
+  display: inline-flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Vertically center the items */
+  gap: 10px; /* Add spacing between the image and text */
+}
+
+.agent-desc p {
+  font-size: 17px;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #4a4a4a;
+}
+
+img {
+  width: 110%; /* Increase the width to make the image appear bigger */
+  overflow: hidden;
+  margin-bottom: 0px;
+  display: block; /* Ensure the image is treated as a block element */
+  margin-left: auto; /* Center the image horizontally */
+  margin-right: auto; /* Center the image horizontally */
+  text-align: center;
+}
+
+.video-buttons img {
+  cursor: pointer;
+  filter: invert(100%);
+  width: 50px; /* Set a fixed size for the buttons */
+  height: auto;
+  margin: 50px 0; /* Add spacing between buttons */
+  display: block; /* Stack buttons vertically */
+}
+
+@media (max-width: 992px) {
+  .video-buttons img {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+.video-buttons img:hover {
+  cursor: pointer;
+  transform: scale(1.2); /* Slight zoom effect */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.video-display {
+  flex: 1; /* Allow the video to take up remaining space */
+  text-align: center; /* Center the video within its container */
+}
+
+.video-display video {
+  width: 400%; /* Make the video responsive */
+  max-width: 600px; /* Limit the maximum width of the video */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: Add shadow */
+}
+
+.video-description {
+  width: 100%; /* Adjust width as needed */
+  max-width: 600px; /* Lock the maximum width of the container */
+  margin: 0 auto; /* Center the container */
+  text-align: center; /* Center-align the text */
+  overflow-wrap: break-word; /* Ensure long words break to the next line */
+  word-wrap: break-word; /* Fallback for older browsers */
+  word-break: break-word; /* Break long words */
+}
+
+.video-description p {
+  font-size: 17px;
+}
+
+/* Adjust layout for screens smaller than 992px */
+.single-product .left-image img {
+    border-radius: 25px; /* Ensure the border radius remains consistent */
+    max-width: 100%;
+    width: 611px; /* Fixed width for the main image */
+    height: 344px; /* Fixed height for the main image */
+    object-fit: contain; /* Ensures the image maintains its aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    margin-bottom: 13px;
+}
+
+.thumbnail-container {
+    display: flex;
+    gap: 10px; /* or whatever spacing you want between thumbnails */
+    justify-content: flex-start; /* align thumbnails to the left */
+    align-items: center; /* vertically center if needed */
+}
+
+.thumbnail-container img {
+    object-fit: cover;    /* or 'contain' for letterboxing */
+    aspect-ratio: 16/9;   /* Ensures the ratio is kept */
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.thumbnail-container img:hover {
+    transform: scale(1.02); /* Slight zoom effect */
+    border-color: #e9e9e9; /* Highlight border on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Intensify shadow on hover */
+}
+
+.thumbnail-container img.active {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Add a stronger shadow for the active thumbnail */
+}
+
+/* 
+---------------------------------------------
+Global Styles
+--------------------------------------------- 
+*/
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+  background: #0071f8;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #0071f8;
+  color: #fff;
+}
+
+.section {
+  margin-top: 120px;
+}
+
+.section-heading {
+  margin-bottom: 70px;
+}
+
+.section-heading h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 44px;
+  color: #ffffff;
+}
+
+.trending .section-heading h2 {
+  color: #000000;
+}
+.trending .section-heading h6 {
+  color: #000000;
+}
+
+.section-heading h6 {
+  margin-top: 30px;
+  color: #ffffff;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.main-button a {
+  display: inline-block;
+  background-color: #ee626b;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  height: 50px;
+  line-height: 50px;
+  padding: 0px 30px;
+  border-radius: 25px;
+  transition: all .3s;
+}
+
+.main-button a:hover {
+  background-color: #ec3c47;
+  color: #fff;
+}
+
+/* 
+---------------------------------------------
+Pre-loader Style
+--------------------------------------------- 
+*/
+
+.js-preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.99);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 1;
+  visibility: visible;
+  z-index: 9999;
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+
+.js-preloader.loaded {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@-webkit-keyframes dot {
+  50% {
+      -webkit-transform: translateX(96px);
+      transform: translateX(96px);
+  }
+}
+
+@keyframes dot {
+  50% {
+      -webkit-transform: translateX(96px);
+      transform: translateX(96px);
+  }
+}
+
+@-webkit-keyframes dots {
+  50% {
+      -webkit-transform: translateX(-31px);
+      transform: translateX(-31px);
+  }
+}
+
+@keyframes dots {
+  50% {
+      -webkit-transform: translateX(-31px);
+      transform: translateX(-31px);
+  }
+}
+
+.preloader-inner {
+  position: relative;
+  width: 142px;
+  height: 40px;
+  background: transparent;
+}
+
+.preloader-inner .dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  left: 15px;
+  background: #ffffff;
+  border-radius: 50%;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-animation: dot 2.8s infinite;
+  animation: dot 2.8s infinite;
+}
+
+.preloader-inner .dots {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  margin-top: 12px;
+  margin-left: 31px;
+  -webkit-animation: dots 2.8s infinite;
+  animation: dots 2.8s infinite;
+}
+
+.preloader-inner .dots span {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+
+
+/* 
+---------------------------------------------
+Header Style
+--------------------------------------------- 
+*/
+
+.background-header {
+  background-color: #121723 !important;
+  border-radius: 0px 0px 25px 25px;
+  height: 80px!important;
+  position: fixed!important;
+  top: 0!important;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
+  -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+}
+
+.background-header .logo img {
+  max-width: 110px;
+}
+
+.header-area {
+  position: absolute;
+  background-color: transparent;
+  top: 40px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+}
+
+.header-area .main-nav {
+  background: transparent;
+  display: flex;
+}
+
+.header-area .main-nav .logo {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  display: inline-block;
+}
+
+.background-header .main-nav .logo{
+  margin-top: 18px;
+}
+
+.header-area .main-nav ul.nav {
+  border-radius: 0px 0px 25px 25px;
+  flex-basis: 100%;
+  margin-top: 10px;
+  justify-content: right;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  z-index: 999;
+}
+
+.header-area .main-nav .nav li:last-child {
+  padding-right: 0px;
+}
+
+.header-area .main-nav .nav li {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  line-height: 40px;
+}
+
+/* Style for the dropdown container */
+.nav .dropdown {
+  position: relative;
+}
+
+/* Style for the dropdown menu */
+.nav .dropdown-menu {
+  display: none; /* Hide the dropdown by default */
+  position: absolute;
+  top: 100%; /* Position below the parent */
+  left: 0;
+  background-color: rgb(15, 25, 35); /* Dropdown background color */
+  padding: 10px 0;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+
+
+.nav .dropdown-menu li a {
+  color: white; /* Text color */
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+}
+
+.nav .dropdown-menu li a:hover {
+  background-color: #555; /* Highlight on hover */
+}
+
+/* Show the dropdown menu on hover */
+.nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav .dropdown-menu li a {
+  background-color: transparent; /* Remove background color */
+  color: white; /* Keep the text white */
+  text-decoration: none; /* Remove underline */
+  display: block;
+  font-size: 7px;
+  border-radius: 0; /* Remove rounded corners */
+  padding: 0px 0px; /* Adjust padding for plain text appearance */
+}
+
+.nav .dropdown-menu {
+  padding: 0; /* Remove padding from the dropdown menu */
+  margin: 0; /* Remove margin from the dropdown menu */
+  width: auto;
+}
+
+.nav .dropdown-menu li {
+  padding: 0; /* Remove padding from list items */
+  margin: 0; /* Remove margin from list items */
+}
+
+.nav .dropdown-menu li a {
+  padding: 0px 0px; /* Adjust padding for a compact appearance */
+  margin: 0; /* Remove any margins */
+  display: block; /* Ensure the link takes up the full width */
+  text-align: left; /* Align text to the left */
+  background-color: transparent; /* Remove background color */
+  color: white; /* Keep the text white */
+  text-decoration: none; /* Remove underline */
+  font-size: 13px; /* Adjust font size */
+  border-radius: 0; /* Remove rounded corners */
+}
+
+.header-area .main-nav .nav li a {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  font-weight: 300;
+  font-size: 15px;
+  height: 40px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #fff;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  border: transparent;
+  letter-spacing: .25px;
+}
+
+.header-area .main-nav .nav li:last-child a {
+  background-color: #ee626b;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+}
+
+.header-area .main-nav .nav li:last-child:hover a {
+  background-color: #ec3c47;
+}
+
+.header-area .main-nav .nav li:hover a {
+  background-color: rgba(255, 255, 255, 0.10);
+}
+
+.header-area .main-nav .nav li a.active {
+  color: #fff;
+  background-color: rgba(208, 57, 57, 0.7);
+}
+
+.background-header .main-nav .nav li a.active {
+  color: #fff;
+  background-color: rgba(208, 57, 57, 0.7);
+}
+
+.header-area .main-nav .menu-trigger {
+  cursor: pointer;
+  position: absolute;
+  top: 33px;
+  width: 32px;
+  height: 40px;
+  text-indent: -9999em;
+  z-index: 99;
+  right: 20px;
+  display: none;
+}
+
+.background-header .main-nav .menu-trigger {
+  top: 22px;
+}
+
+.background-header .main-nav ul.nav {
+  margin-top: 20px;
+}
+
+.header-area .main-nav .menu-trigger span,
+.header-area .main-nav .menu-trigger span:before,
+.header-area .main-nav .menu-trigger span:after {
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  left: 0;
+}
+
+.header-area .main-nav .menu-trigger span:before,
+.header-area .main-nav .menu-trigger span:after {
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  left: 0;
+  width: 75%;
+}
+
+.header-area .main-nav .menu-trigger span:before,
+.header-area .main-nav .menu-trigger span:after {
+  content: "";
+}
+
+.header-area .main-nav .menu-trigger span {
+  top: 16px;
+}
+
+.header-area .main-nav .menu-trigger span:before {
+  -moz-transform-origin: 33% 100%;
+  -ms-transform-origin: 33% 100%;
+  -webkit-transform-origin: 33% 100%;
+  transform-origin: 33% 100%;
+  top: -10px;
+  z-index: 10;
+}
+
+.header-area .main-nav .menu-trigger span:after {
+  -moz-transform-origin: 33% 0;
+  -ms-transform-origin: 33% 0;
+  -webkit-transform-origin: 33% 0;
+  transform-origin: 33% 0;
+  top: 10px;
+}
+
+.header-area .main-nav .menu-trigger.active span,
+.header-area .main-nav .menu-trigger.active span:before,
+.header-area .main-nav .menu-trigger.active span:after {
+  background-color: transparent;
+  width: 100%;
+}
+
+.header-area .main-nav .menu-trigger.active span:before {
+  -moz-transform: translateY(6px) translateX(1px) rotate(45deg);
+  -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
+  -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
+  transform: translateY(6px) translateX(1px) rotate(45deg);
+  background-color: #fff;
+}
+
+.background-header .main-nav .menu-trigger.active span:before {
+  background-color: #fff;
+}
+
+.header-area .main-nav .menu-trigger.active span:after {
+  -moz-transform: translateY(-6px) translateX(1px) rotate(-45deg);
+  -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
+  -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
+  transform: translateY(-6px) translateX(1px) rotate(-45deg);
+  background-color: #fff;
+}
+
+.background-header .main-nav .menu-trigger.active span:after {
+  background-color: #fff;
+}
+
+.header-area.header-sticky .nav li a.active {
+  color: #fff;
+}
+
+.visible{
+  display:inline !important;
+}
+
+@media (max-width: 1200px) {
+  .header-area .main-nav .nav li {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .background-header .main-nav {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 0px 25px 25px;
+    width: 100%;
+  }
+  .background-header .main-nav .nav,
+  .header-area .main-nav .nav {
+    background-color: #fff;
+  }
+  .background-header .main-nav .nav li a,
+  .header-area .main-nav .nav li a {
+    line-height: 50px;
+    height: 50px;
+    font-weight: 400;
+    color: #1e1e1e;
+    background-color: #fff;
+     border-radius: 0px 0px 25px 25px;
+  }
+  .background-header .main-nav .nav li,
+  .header-area .main-nav .nav li {
+    border-top: 1px solid #ddd;
+    background-color: #f1f0fe;
+    height: 50px;
+    border-radius: 0px 0px 25px 25px;
+  }
+  .background-header .main-nav .nav li:last-child,
+  .header-area .main-nav .nav li:last-child {
+    border-radius: 0px 0px 25px 25px;
+  }
+  .header-area .main-nav .nav {
+    height: auto;
+    flex-basis: 100%;
+  }
+  .header-area .main-nav .logo {
+    position: absolute;
+    left: 30px;
+    top: 0px;
+  }
+  .background-header .main-nav .logo {
+    top: 0px;
+  }
+  .background-header .main-nav .border-button {
+    top: 0px !important;
+  }
+  .header-area .main-nav .border-button {
+    position: absolute;
+    top: 15px;
+    right: 70px;
+  }
+  .header-area.header-sticky .nav li.search-icon a {
+    width: 100%;
+  }
+  .header-area .nav li:last-child a {
+    background-color: transparent !important;
+    font-weight: 300 !important;
+    text-transform: capitalize !important;
+  }
+  .header-area {
+    background-color: transparent;
+    padding: 0px 15px;
+    height: 80px;
+    box-shadow: none;
+    text-align: center;
+  }
+  .header-area .container {
+    padding: 0px;
+  }
+  .header-area .logo {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .header-area .menu-trigger {
+    display: block !important;
+  }
+  .header-area .main-nav {
+    overflow: hidden;
+  }
+  .header-area .main-nav .nav {
+    float: none;
+    width: 100%;
+    display: none;
+    -webkit-transition: all 0s ease 0s;
+    -moz-transition: all 0s ease 0s;
+    -o-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
+    margin-left: 0px;
+  }
+  .header-area .main-nav .nav li:first-child {
+    border-top: 1px solid #eee;
+  }
+  .header-area.header-sticky .nav {
+    margin-top: 100px !important;
+  }
+  .background-header.header-sticky .nav {
+    margin-top: 80px !important;
+  }
+  .header-area .main-nav .nav li {
+    width: 100%;
+    background: #fff;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  
+}
+
+/* 
+---------------------------------------------
+Banner Style
+--------------------------------------------- 
+*/
+
+.main-banner {
+  /* background-image: url(../images/VALORANT-bg.jpg); */
+  background-color: #0f1923;
+  border-radius: 0px 0px 30px 30px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding: 225px 0px; */
+  padding: 100px 0px; /* Add horizontal padding for space on either side */
+  /* margin: 0 20px; */
+}
+
+.main-banner .caption h6 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 767px) {
+  .main-banner .caption h6 {
+    margin-top: 20px;
+  }
+}
+
+.main-banner .caption h2 {
+  font-size: 48px;
+  color: #fff;
+  margin-top: 20px;
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+}
+
+.main-banner .caption h2:after {
+  position: absolute;
+  background-image: url(../images/caption-dec.png);
+  width: 202px;
+  height: 12px;
+  content: '';
+  left: 125px;
+  bottom: 0;
+}
+
+.main-banner .caption p {
+  color: #fff;
+  margin-bottom: 70px;
+}
+
+.main-banner .caption form {
+  position: relative;
+  max-width: 450px;
+}
+
+.main-banner .caption form input {
+  max-width: 450px;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border-radius: 25px;
+  background-color: #fff;
+  border: none;
+  padding: 0px 25px;
+  font-size: 14px;
+  color: #7a7a7a;
+}
+
+.main-banner .caption form button {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  background-color: #ee626b;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0px 25px;
+  border: none;
+  border-radius: 25px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all .3s;
+}
+
+.main-banner .caption form button:hover {
+  background-color: #ec3c47;
+}
+
+/* .main-banner .right-image {
+  position: relative;
+} */
+
+.main-banner .right-image img {
+  border-radius: 25px;
+  outline: 2px solid #e44c49; /* Added outline */
+  max-width: 100%; /* Prevent the image from exceeding the container's width */
+}
+
+/* .main-banner .right-image span.offer {
+  position: absolute;
+  left: -25px;
+  bottom: -25px;
+  border-radius: 50%;
+  background-color: #ee626b;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+} */
+
+
+
+/* 
+---------------------------------------------
+Services Style
+--------------------------------------------- 
+*/
+
+.features {
+  margin-top: -80px;
+}
+
+.features .item {
+  padding: 35px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.features .item h4 {
+  font-size: 17px;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+
+.features .item .image {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  text-align: center;
+  line-height: 90px;
+  background-color: #0071f8;
+  border-radius: 50%;
+  transition: all .3s;
+}
+
+.features .item:hover .image {
+  background-color: #ec3c47;
+}
+
+
+
+/* 
+---------------------------------------------
+Trending Style
+--------------------------------------------- 
+*/
+
+
+.trending ul.trending-filter {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.trending ul.trending-filter li {
+  display: inline-block;
+  margin: 5px 8px;
+}
+
+.trending ul.trending-filter li a {
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #1e1e1e;
+  background-color: #eee;
+  padding: 8px 20px;
+  border-radius: 25px;
+  transition: all .3s;
+}
+
+.trending ul.trending-filter li a.is_active {
+  background-color: #ee626b;
+  color: #fff;
+}
+
+.trending ul.trending-filter li a.is_active:hover {
+  color: #fff;
+}
+
+.trending ul.trending-filter li a:hover {
+  color: #ec3c47;
+}
+
+
+
+.trending .main-button {
+  margin-top: 32px;
+  text-align: right;
+}
+
+.trending .item  {
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  outline: 4px solid #d1d1d1; /* Updated outline color */
+  margin-bottom: 20px;
+  width: 240px;
+  height: 320px; /* Set a fixed height */
+}
+
+.trending .item .thumb {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.trending .item .thumb img {
+  border-radius: 15px;
+  margin-top: 15px; /* Adjusted margin */
+  width: 90%;
+  height: auto;
+  object-fit: cover; /* Ensures images fill the container without distortion */
+}
+
+.trending-box {
+  gap: 0px
+}
+
+.trending .item .down-content {
+  padding: 25px;
+  padding-bottom: 30px;
+}
+
+/* Ensure all product cards in related-games have the same height */
+
+.trending-items .item {
+  max-width: 350; /* Set a fixed width */
+  max-height: 350px; /* Set a fixed height */
+  min-width: auto;
+  min-height: none;
+  margin-bottom: 20px;
+}
+
+.trending-box .item .down-content span.category {
+  font-size: 14px;
+  color: #7a7a7a;
+  margin-bottom: 5px;
+  display: inline-block;
+  text-align: left;
+}
+
+.trending .item .down-content h4 {
+  font-size: 17px;
+  font-weight: 600;
+  transition: all .3s;
+  text-align: left;
+}
+
+.trending .item .down-content a {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: #2c2c2c;
+  color: #fff;
+  border-radius: 50%;
+  right: 25px;
+  bottom: 25px;
+  transition: all .3s;
+}
+
+.trending .item:hover {
+  transform: all 3s;
+  transform: scale(1.02); /* Slight zoom effect */
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.322); /* Add shadow on hover */
+  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth and slower transition */
+}
+
+.trending .item:hover .down-content h4 {
+  color: #ee626b;
+}
+
+.trending-items {
+    display: flex;
+
+}
+
+/* 
+---------------------------------------------
+Most Played Style
+--------------------------------------------- 
+*/
+/* Gun stats list customization */
+
+#gun-stats .list-group-item,
+#map-callouts.list-group .list-group-item  {
+  text-align: left;
+    background: transparent;
+    color: #111111;
+    border: none;
+    padding: 8px 24px;
+    font-size: 1rem;
+    margin-bottom: 0px;
+    border-radius: 6px;
+    transition: background 0.2s;
+    letter-spacing: 0.02em;
+}
+
+#gun-stats .list-group-item:last-child {
+    margin-bottom: 0;
+}
+
+#gun-stats .list-group-item b {
+    color: #ff4655;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+#map-callouts.list-group .list-group-item:last-child {
+    margin-bottom: 0;
+}
+
+#map-callouts.list-group .list-group-item b {
+    color: #ff4655;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+#map-callouts {
+    column-count: 3;
+    column-gap: 16px;
+    /* Optional: for better look */
+    padding-left: 0;
+    margin-top: 16px;
+}
+#map-callouts .list-group-item {
+    display: block;
+    width: 100%;
+    break-inside: avoid;
+}
+.most-played {
+  /* background-image: url(../images/VALORANT-bg2.jpg); */
+  background-color: #0f1923;
+  padding: 0px 20px; /* Add horizontal padding for space on either side */
+  border-radius: 30px;
+  margin: 0;
+  margin-top: 50px;
+  max-width: 100%;
+}
+
+.most-played .main-button {
+  margin-top: 32px;
+  text-align: right;
+}
+
+.most-played .item  {
+  max-width: 250px; /* Set a fixed width */
+  max-height: 450px;
+  background-color: #0f1923;
+  position: relative;
+  border-radius: 25px;
+  text-align: center;
+  margin-bottom: 40px;
+  outline: 4px solid #ee626b; /* Updated outline color */
+  gap: 0px;
+}
+
+.most-played .item .thumb {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #0f1923;
+  background-size: cover; /* Ensure the image covers the container */
+  background-position: center; /* Center the image */
+}
+
+.most-played .item .thumb img {
+  max-width: 250px;
+  max-height: 350px;
+  height: auto;
+  object-fit: cover; /* Ensures the image fills the container without empty margins */
+}
+
+.most-played .item:hover {
+  transform: all 3s;
+  transform: scale(1.02); /* Slight zoom effect */
+  box-shadow: 0 8px 35px rgb(255, 0, 0); /* Add shadow on hover */
+  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth and slower transition */
+}
+
+.most-played .item .down-content {
+  padding: 20px 15px 40px 15px;
+}
+
+.most-played .item .down-content span.category {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.most-played .item .down-content h4 {
+  font-size: 17px;
+  font-weight: 600;
+  transition: all .3s;
+  color: #ffffff;
+}
+
+.most-played .item .down-content a {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  padding: 0px 15px;
+  background-color: #ee626b;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+  transition: all .3s;
+}
+
+.most-played .item:hover .down-content h4 {
+  color: #ee626b;
+}
+
+.most-played .item:hover .down-content a {
+  background-color: #ea3945;
+}
+
+
+/* 
+---------------------------------------------
+Categories Style
+--------------------------------------------- 
+*/
+
+.categories .main-button {
+  margin-top: 30px;
+}
+
+.categories .item  {
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.categories .item .thumb {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.categories .item h4 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  padding: 22px;
+  margin-bottom: 0px;
+}
+
+/* Comment Form Styling */
+.comment-form-section {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.comment-form textarea {
+    width: 50%;
+    height: 100px;
+    padding: 15px;
+    font-size: 14px;
+    border: .5px solid #ee626b;
+    border-radius: 25px;
+    resize: none; /* Prevent resizing */
+    margin-bottom: 1px;
+}
+
+.edit-comment-textarea {
+    width: 40%; /* Full width for the textarea */
+    height: 100px; /* Fixed height */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ee626b; /* Light border */
+    border-radius: 15px; /* Rounded corners */
+    resize: none; /* Disable resizing */
+    margin-bottom: 1px; /* Space below the textarea */
+}
+
+.comment-form textarea:focus {
+    outline: none;
+    border-color: #ee626b; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(238, 98, 107, 0.5);
+    transform: 3s;
+}
+
+.comment-form button {
+    background-color: #ee626b;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+.comment-form button:hover {
+    background-color: #ec3c47; /* Slightly darker shade on hover */
+}
+
+
+
+#errorcomment {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text inside the div */
+    padding: 15px;
+    color: #721c24; /* Dark red text */
+    margin: 20px auto; /* Center horizontally with auto margins */
+    margin-left: 0px;
+    width: 50%; /* Adjust width as needed */
+    font-size: 14px;
+}
+
+/* Edit Comment Form Styling */
+.edit-comment-form {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    width: 100%; /* Full width of the container */
+}
+
+.edit-comment-form textarea {
+    width: 40%; /* Full width for the textarea */
+    height: 100px; /* Fixed height */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ee626b; /* Light border */
+    border-radius: 15px; /* Rounded corners */
+    resize: none; /* Disable resizing */
+    margin-bottom: 1px; /* Space below the textarea */
+}
+
+.edit-comment-form textarea:focus {
+    outline: none;
+    border-color: #ee626b; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(238, 98, 107, 0.5); /* Subtle glow effect */
+}
+
+.edit-comment-form button {
+    background-color: #ee626b;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+/* General Styling for Icons */
+.edit-icon,
+.delete-icon {
+    width: 16px; /* Set the width of the icons */
+    height: 16px; /* Set the height of the icons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.2s ease, opacity 0.2s ease; /* Smooth hover effect */
+    display: inline-block; /* Align icons inline */
+    margin-left: 5px;
+}
+
+/* 
+---------------------------------------------
+Footer Style
+--------------------------------------------- 
+*/
+
+footer {
+  margin-top: 150px;
+  background-color: #0f1923;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  border-radius: 30px 30px 0px 0px;
+}
+
+footer p {
+  text-align: center;
+  line-height: 90px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+footer p a {
+  color: #fff;
+  transition: all .3s;
+  position: relative;
+  z-index: 3;
+}
+
+footer p a:hover {
+  opacity: 0.75;
+}
+
+
+/* 
+---------------------------------------------
+Page Header Style
+--------------------------------------------- 
+*/
+
+.page-heading {
+  /* background-image: url(../images/valorant-weaps.jpg); */
+  background-color: #0f1923;
+  border-radius: 0px 0px 30px 30px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0px 100px 0px;
+  text-align: center;
+}
+
+.page-heading span {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+}
+
+.page-heading span a {
+  color: #fff;
+}
+
+.page-heading h3 {
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 120px; /* Increased margin-top to lower the position */
+  position: relative;
+  margin-bottom: 20px;
+}
+
+
+/* 
+---------------------------------------------
+Shop Page Style
+--------------------------------------------- 
+*/
+
+/* 
+---------------------------------------------
+Single Page Style
+--------------------------------------------- 
+*/
+
+.sep {
+  width: 100%;
+  height: 1px;
+  background-color: #eee;
+  margin: 80px 0px;
+}
+
+.sepcomm {
+  width: 100%;
+  height: 1px;
+  background-color: #eee;
+  margin: 15px 0px;
+}
+
+.single-product h4 {
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.single-product p {
+  margin-top: 15px;
+}
+
+.single-product form input {
+  width: 80px;
+  height: 50px;
+  background-color: #f7f7f7;
+  border: 1px solid #e7e7e7;
+  border-radius: 25px;
+  text-align: center;
+  float: left;
+  margin-right: 15px;
+}
+
+.single-product form {
+  display: inline;
+}
+
+.single-product form button {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  background-color: #ee626b;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0px 25px;
+  border: none;
+  border-radius: 25px;
+  transition: all .3s;
+}
+
+.single-product form button i {
+  margin-right: 5px;
+}
+
+.single-product form button:hover {
+  background-color: #ec3c47;
+}
+
+.single-product ul {
+  margin-top: 60px;
+}
+
+.single-product ul li {
+  display: block;
+  margin: 20px 0px;
+  font-size: 14px;
+  color: #0071f8;
+}
+
+.single-product ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.single-product ul li span {
+  width: 120px;
+  display: inline-block;
+  color: #aaa;
+}
+
+.tabs-content {
+  background-color: #f7f7f7;
+  border-radius: 25px;
+  padding: 60px;
+  transition: all 0.3s;
+}
+
+.tabs-content .nav-link {
+  border: none;
+  border-radius: 0px;
+  background-color: transparent !important;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e1e1e;
+  padding: 0px;
+}
+
+.tabs-content ul.nav-tabs {
+  border-bottom: none;
+}
+
+.tabs-content ul.nav-tabs li {
+  border-right: 1px solid #d7d7d7;
+  margin-right: 30px;
+  padding-right: 30px;
+}
+
+.tabs-content ul.nav-tabs li:last-child {
+  border-right: none;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+.tabs-content .nav-tabs .nav-link.active {
+  color: #ee626b;
+}
+
+.tabs-content .tab-content {
+  margin-top: 30px;
+}
+
+.related-games .main-button {
+  text-align: right;
+  margin-top: 32px;
+}
+.related-games .item h4 {
+  font-size: 18px; /* Adjust the font size */
+  font-weight: bold; /* Make the text bold */
+  color: #000000; /* Change the text color */
+}
+/* Customize images in the related-games section */
+.related-games .thumb img {
+  transform: scale(1.25);
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Add hover effect */
+.related-games .thumb img:hover {
+  transform: scale(1.3); /* Slightly enlarge the image on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Intensify shadow on hover */
+}
+
+/* 
+---------------------------------------------
+Contact PAge Style
+--------------------------------------------- 
+*/
+
+.contact-page .container {
+  max-width: 800px; /* Optional: Limit the width of the content */
+  width: 100%; /* Ensure it is responsive */
+}
+
+.contact-page .right-content {
+  margin-left: 50px;
+}
+
+.contact-page img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+  margin-bottom: 30px; /* Add spacing below the image */
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3); /* Increased thickness and intensity */
+}
+
+.noaccount p {
+  font-size: 16px; /* Adjust font size */
+  color: #555; /* Set text color */
+  margin-top: 25px ;
+}
+
+.contact-page form input[type="text"],
+.contact-page form input[type="password"] {
+  align-items: center;
+  max-width: 600px;
+  width: 70%; /* Make input fields take full width */
+  height: 40px;
+  padding: 0 20px; /* Add padding for better usability */
+  background-color: #f7f7f7;
+  border: 1px solid #e7e7e7;
+  margin-bottom: 10px; /* Add spacing between fields */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 25px; /* Add rounded corners */
+  font-size: 14px; /* Adjust font size */
+}
+
+#errorcomment:empty {
+    display: none;
+}
+
+/* Style for the message container */
+.message {
+  padding: 15px; /* Add padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 20px; /* Font size */
+  color: #495057; /* Text color */
+}
+
+#error {
+  background-color: #f8d7da; /* Light red background */
+  color: #721c24; /* Dark red text */
+  border: 1px solid #f5c6cb; /* Light red border */
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#success {
+   background-color: #a5ffaa; /* Light red background */
+  color: #7fb882; /* Dark red text */
+  border: 1px solid #72c26b; /* Light red border */
+  padding: 15px;
+  border-radius: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.message p {
+  font-size: 18px; /* Font size */
+}
+
+/* Style for the anchor text (Go Back and Login Now buttons) */
+.message a {
+  text-decoration: none; /* Remove underline */
+  color: #ffffff; /* Blue text color */
+  font-weight: bold; /* Bold text */
+  margin-top: -40px; /* Add space above */
+  display: inline-block; /* Make it behave like a button */
+}
+
+/* Style for the button inside the anchor */
+.message a button {
+  background-color: #ee626b; /* Blue background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 14px; /* Font size */
+  transition: background-color 0.3s ease;
+}
+
+.message a button:hover {
+  background-color: #ec3c47; /* Darker blue on hover */
+}
+
+#form-submit {
+  width: 90px;
+  height: 35px;
+  background-color: #ee626b;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  border-radius: 25px;
+  transition: all .3s;
+  text-align: center;
+}
+
+#form-submit:hover {
+  background-color: #ec3c47;
+}
+
+/* 
+---------------------------------------------
+Responsive Style
+--------------------------------------------- 
+*/
+
+body {
+  background-color: #e3e3e3;
+  overflow-x: hidden;
+}

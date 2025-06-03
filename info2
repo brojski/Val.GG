@@ -1,0 +1,46 @@
+1. ../vendor/jquery/jquery.min.js
+   Purpose: This is the jQuery library, which is required for many plugins and custom scripts.
+   Usage in Your Code:
+   The counter.js file uses jQuery ($.fn.countTo).
+   If any other scripts (e.g., isotope.min.js, owl-carousel.js) depend on jQuery, this file is necessary.
+   Conclusion: Used. Keep this file.
+2. ../vendor/bootstrap/js/bootstrap.min.js
+   Purpose: This is the JavaScript file for Bootstrap, which provides interactive components like modals, dropdowns, and carousels.
+   Usage in Your Code:
+   If your project uses Bootstrap components (e.g., dropdowns in the navigation menu), this file is required.
+   Your navigation menu includes a dropdown (<li class="dropdown">), so this file is likely necessary.
+   Conclusion: Used. Keep this file.
+3. ../assets/js/isotope.min.js
+   Purpose: Isotope is a JavaScript library for filtering and sorting grid layouts.
+   Usage in Your Code:
+   There is no visible code in your project that initializes or uses Isotope (e.g., $('.grid').isotope()).
+   If you are not using grid layouts with filtering/sorting, this file is unnecessary.
+   Conclusion: Not Used. You can remove this file unless you plan to use Isotope in the future.
+4. ../assets/js/owl-carousel.js
+   Purpose: Owl Carousel is a JavaScript library for creating responsive carousels/sliders.
+   Usage in Your Code:
+   There is no visible code in your project that initializes or uses Owl Carousel (e.g., $('.owl-carousel').owlCarousel()).
+   If you are not using a carousel/slider, this file is unnecessary.
+   Conclusion: Not Used. You can remove this file unless you plan to use Owl Carousel in the future.
+5. ../assets/js/counter.js
+   Purpose: This file provides a jQuery plugin ($.fn.countTo) for animating number counters.
+   Usage in Your Code:
+   There is no visible code in your project that initializes or uses the countTo plugin (e.g., $('.counter').countTo()).
+   If you are not using animated counters, this file is unnecessary.
+   Conclusion: Not Used. You can remove this file unless you plan to use animated counters in the future.
+6. ../assets/js/custom.js
+   Purpose: This file is typically used for custom JavaScript specific to your project.
+   Usage in Your Code:
+   Without seeing the contents of custom.js, it’s unclear if it is being used.
+   Check if this file contains any custom scripts that are required for your project.
+   Conclusion: Potentially Used. Review the contents of this file to confirm.
+   Summary
+   Here’s a breakdown of whether each file is used:
+
+File Status Action
+jquery.min.js Used Keep this file.
+bootstrap.min.js Used Keep this file.
+isotope.min.js Not Used Remove this file unless you plan to use Isotope in the future.
+owl-carousel.js Not Used Remove this file unless you plan to use Owl Carousel in the future.
+counter.js Not Used Remove this file unless you plan to use animated counters.
+custom.js Review Check the contents of this file to determine if it is necessary.
