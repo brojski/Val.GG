@@ -85,11 +85,13 @@ if (!isset($_SESSION['valid'])) {
               <p>Username</p>
               <input
                 type="text"
+                placeholder="noobmaster69"
                 name="username"
                 id="username">
               <p>Email</p>
               <input
                 type="text"
+                placeholder="noobmaster69@yahoo.com"
                 name="email"
                 id="email"
                 required><br>
@@ -97,6 +99,7 @@ if (!isset($_SESSION['valid'])) {
               <input
                 type="text"
                 name="age"
+                placeholder="18"
                 id="age"
                 required><br>
               <p>Password</p>

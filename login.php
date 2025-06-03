@@ -86,6 +86,7 @@ if (!isset($_SESSION['valid'])) {
               <p>Username</p>
               <input
                 type="text"
+                placeholder="noobmaster69"
                 name="username"
                 id="username"
                 required><br>
