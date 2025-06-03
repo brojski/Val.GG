@@ -356,6 +356,10 @@ Pre-loader Style
   border-radius: 50%;
 }
 
+input::placeholder {
+  font-style: italic;
+}
+
 
 
 /* 
