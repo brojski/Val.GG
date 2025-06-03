@@ -13,7 +13,7 @@
 <h2>Run online website</h2>
 <p>
   Or
-  <a href="http://acoba-ruadap-valgg.atwebpages.com/webdev_finalproj/" target="blank"
+  <a href="http://acoba-ruadap-valgg.atwebpages.com/webdev_finalproj/" target="_blank"
     >run the website online</a
   >. (THIS WEBSITE IS SAFE)<br />
   <strong>FOR PLDT USERS:</strong> Run the website with <strong><a href="https://www.opera.com/gx">Opera GX </a></strong>or use mobile data that <strong>isn't from SMART or PLDT.</strong> <br/>
