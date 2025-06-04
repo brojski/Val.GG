@@ -20,7 +20,7 @@
   <ul>
     <li>To enable VPN, click settings (cog wheel icon on left side)</li>
     <li>Privacy & security on left side</li>
-    <li>Scroll down until you see 'Advanced'</li>
+    <li>Scroll down to the very bottom and you will see 'Advanced'</li>
     <li>Scroll down a bit and you will see an option to enable VPN</li>
   </ul>
   <strong>DO NOT</strong> type sensitive information. Use fake names,
