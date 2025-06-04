@@ -31,5 +31,5 @@ If you get a huge <strong>red warning pop-up</strong>, click details, and click 
 <img src=">
 
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-https://assets.capitalfm.com/2022/37/how-much-is-hasbullas-ufc-contract-worth-1663241842-view-0.png<br />
+<img src="https://assets.capitalfm.com/2022/37/how-much-is-hasbullas-ufc-contract-worth-1663241842-view-0.png"><br />
 thx for visiting
