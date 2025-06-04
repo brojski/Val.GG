@@ -27,7 +27,7 @@
   emails, passwords because I can see them.<br />
 </p>
 <br />
-If you get a huge <div style="color: red">red warning pop-up</div>, click details, and click 'this unsafe site'
+If you get a huge <strong>red warning pop-up</strong>, click details, and click 'this unsafe site'
 <img src=">
 
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
