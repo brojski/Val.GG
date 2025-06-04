@@ -17,6 +17,12 @@
     >run the website online</a
   >. (THIS WEBSITE IS SAFE)<br />
   <strong>FOR PLDT USERS:</strong> Run the website with <strong><a href="https://www.opera.com/gx">Opera GX </a></strong>or use mobile data that <strong>isn't from SMART or PLDT.</strong> <br/>
+  <ul>
+    <li>To enable VPN, click settings (cog wheel icon on left side)</li>
+    <li>Privacy on left side</li>
+    <li>Scroll down until you see 'Advanced'</li>
+    <li>Scroll down a bit and you will see an option to enable VPN</li>
+  </ul>
   <strong>DO NOT</strong> type sensitive information. Use fake names,
   emails, passwords because I can see them.<br />
 </p>
